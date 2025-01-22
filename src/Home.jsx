@@ -11,7 +11,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get(`http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=London`)
+      .get(`https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=London`)
       .then((response) => {
         console.log(response);
         setData(response.data);
