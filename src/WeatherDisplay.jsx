@@ -12,7 +12,7 @@ function WeatherDisplay() {
   useEffect(() => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=10`
+        `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=10`
       )
       .then((response) => {
         console.log(response);
